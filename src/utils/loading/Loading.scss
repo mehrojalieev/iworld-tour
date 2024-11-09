@@ -1,0 +1,83 @@
+$primary-color: #3498db; 
+$secondary-color: #2ecc71;
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.earth-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  
+  .earth {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, $primary-color 50%, $secondary-color 50%);
+    animation: earth-spin 5s linear infinite;
+  }
+
+  .cloud {
+    position: absolute;
+    background: rgba(200, 200, 200, 0.7);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: cloud-move 6s linear infinite;
+    
+    &.cloud1 {
+      width: 40px;
+      height: 20px;
+      top: 20%;
+      left: -20%;
+      animation-delay: 0s;
+    }
+
+    &.cloud2 {
+      width: 50px;
+      height: 25px;
+      top: 50%;
+      left: -30%;
+      animation-delay: 1.5s;
+    }
+
+    &.cloud3 {
+      width: 35px;
+      height: 15px;
+      top: 80%;
+      left: -10%;
+      animation-delay: 3s;
+    }
+  }
+}
+
+.loading-text {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #777;
+  animation: fade-in 2s ease-in-out infinite;
+}
+
+@keyframes earth-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes cloud-move {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300px); }
+}
+
+@keyframes fade-in {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}

@@ -1,0 +1,57 @@
+@mixin f-style ($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+.sidebar-wrapper{
+    height: 100%;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-logo{
+    width: 100%;
+    max-width: 200px;
+    height: 80px;
+    border: none;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border: none;
+    }
+}
+
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1.6rem;
+    a{
+        letter-spacing: 1px;
+        @include f-style(17px, 500, #0C1F46);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: #28B0A4;
+    }   
+    }
+}
+
+.sidebar__social-media{
+    padding-top: 13rem;
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.8rem;
+    .social-link{
+        @include f-style(25px, 500, #0C1F46);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            color: #28B0A4;
+        }
+    }
+}

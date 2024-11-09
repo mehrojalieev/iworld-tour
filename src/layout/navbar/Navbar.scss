@@ -1,0 +1,123 @@
+@mixin f-style ($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+
+
+nav{
+    width: 100%;
+    height: fit-content;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--light-color);
+}
+
+.nav-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    width: 100%;
+    background: transparent;
+}
+
+.brand-logo{
+    @include f-style(20px, 600, #000);
+    text-transform: uppercase;
+    img{
+        width: 100%;
+        max-width: 170px;
+        height: 45px;
+        object-fit: cover;
+    }
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    .item-link{
+        @include f-style(16px, 500, var(--dark-color));
+        letter-spacing: 1px;
+    }
+}
+
+
+.media-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .language-select {
+        color: #fff;
+        width: fit-content;
+        .MuiSelect-select {
+          padding: 8px 1px;
+          background-color: transparent;
+        }
+      }
+      
+      .language-option {
+        display: flex !important;
+        align-items: center !important;
+        color: #fff;
+        
+        img {
+          width: 24px !important;
+          height: 14px !important;
+          margin-right: 8px;
+        }
+        
+        span {
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+      
+    
+    .menu-btn{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        background: transparent;
+        outline: none;
+        @include f-style(21px, 500, var(--dark-color));
+    
+    }
+// }
+
+
+@media only screen and (max-width: 804px) {
+    .nav-menu{
+        column-gap: 1.6rem;
+        .item-link{
+            @include f-style(15px, 500, var(--dark-color));
+            letter-spacing: .8px;
+        }
+    }
+    .brand-logo img{
+            max-width: 140px;
+            height: 40px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 730px) {
+    .language-selector, .nav-menu{
+        display: none !important;
+    }
+    .brand-logo img{
+            max-width: 160px;
+            height: 45px;
+}
+    .menu-btn{
+        display: flex;
+    }
+}
