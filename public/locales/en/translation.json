@@ -4,6 +4,26 @@
         "about":"About",
         "contact":"Contact",
         "tours":"Tours",
-        "faq":"FAQ"
+        "faq":"FAQ",
+        "follow":"Follow Us"
+    },
+    "hero-contents":{
+        "content-title":"Travel to your dream destination",
+        "content-description":"Discover the world of dreams! Unique tours, personal approach and unforgettable impressions",
+        "book-btn":"Book now"
+    },
+    "hero-details":{
+        "detail-one":{
+            "title":"Individual approach",
+            "description": "Personalized routes and excursions adapted to your wishes."
+        },
+        "detail-two":{
+            "title":"High level of service",
+            "description": "Comfortable accommodation in the best hotels and reliable transfer"
+        },
+        "detail-three":{
+            "title":"Exclusive offers",
+            "description": "Special excursions and activities that will make your trip unforgettable."
+        }
     }
 }

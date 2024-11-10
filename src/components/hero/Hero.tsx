@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Hero.scss";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 const images = [
   "https://www.cpt.dk/media/10944/maldiverne-desktop.jpg?mode=crop&heightratio=0.63&width=1110",
@@ -19,6 +20,8 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const {t} = useTranslation()
+
   return (
     <div className="hero">
       <div className="banner-images">
@@ -29,24 +32,24 @@ const Hero = () => {
           ))}
 
         <div className="banner-contents">
-          <h3 className="content-title">Travel to your dream destination</h3>
-          <p className="content-description">Discover the world of dreams! Unique tours, personal approach and unforgettable impressions</p>
-          <button className="book-btn">Book now <i><FaArrowRightLong /></i></button>
+          <h3 className="content-title">{t("hero-contents.content-title")}</h3>
+          <p className="content-description">{t("hero-contents.content-description")}</p>
+          <button className="book-btn">{t("hero-contents.book-btn")} <i><FaArrowRightLong /></i></button>
         </div>
 
         <div className="hero__bottom-contents">
           <div className="details-wrapper">
             <div className="content-detail">
-              <h3>Individual approach</h3>
-              <p>Personalized routes and excursions adapted to your wishes.</p>
+              <h3>{t("hero-details.detail-one.title")}</h3>
+              <p>{t("hero-details.detail-one.description")}</p>
             </div>
             <div className="content-detail">
-              <h3>Individual approach</h3>
-              <p>Personalized routes and excursions adapted to your wishes.</p>
+              <h3>{t("hero-details.detail-two.title")}</h3>
+              <p>{t("hero-details.detail-two.description")}</p>
             </div>
             <div className="content-detail">
-              <h3>Individual approach</h3>
-              <p>Personalized routes and excursions adapted to your wishes.</p>
+              <h3>{t("hero-details.detail-three.title")}</h3>
+              <p>{t("hero-details.detail-three.description")}</p>
             </div>
           </div>
 

@@ -28,11 +28,11 @@
 .sidebar-menu{
     display: flex;
     flex-direction: column;
-    row-gap: 1rem;
-    margin-top: 1.6rem;
+    row-gap: 1.4rem;
+    margin-top: 2.4rem;
     a{
         letter-spacing: 1px;
-        @include f-style(17px, 500, #0C1F46);
+        @include f-style(18px, 500, #0C1F46);
         transition: all 0.3s ease-in-out;
         &:hover{
             color: #28B0A4;
@@ -41,17 +41,28 @@
 }
 
 .sidebar__social-media{
-    padding-top: 13rem;
+    padding-top: 14.5rem;
     margin-top: 1.6rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    column-gap: 1.8rem;
-    .social-link{
-        @include f-style(25px, 500, #0C1F46);
-        transition: all 0.3s ease-in-out;
-        &:hover{
-            color: #28B0A4;
+        .media-title{
+            @include f-style(18px, 600, #0C1F46);
+            letter-spacing: 1px;
+        }
+    .media-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1.6rem;
+        margin-top: 10px;
+
+        .social-link{
+            @include f-style(28px, 500, #28B0A4);
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: #28B0A4;
+            }
         }
     }
 }

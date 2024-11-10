@@ -93,3 +93,34 @@
     
     
 }
+
+@media only screen and (max-width: 423px) {
+    .navbar-top{
+        height: fit-content;
+    }
+    .top-actions{
+        // flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        height: fit-content;
+        padding: 0 .6rem;
+        .phone-action, .email-action{
+                column-gap: 0.1rem;
+                letter-spacing: 0;
+                @include f-style(13px, 400, var(--light-color));
+        }
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 329px) {
+    .top-actions{
+        .phone-action, .email-action{
+                column-gap: 0.1rem;
+                letter-spacing: 0;
+                @include f-style(12px, 300, var(--light-color));
+        }
+    }
+}
