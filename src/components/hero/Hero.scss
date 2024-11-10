@@ -7,7 +7,7 @@
 .banner-images {
     position: relative;
     width: 100%;
-    height: 580px; 
+    height: 620px; 
 
     
     .banner-image {
@@ -37,22 +37,21 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     align-items: flex-start;
     row-gap: 2rem;
     padding-top: 7rem;
     padding-left: 3.5rem;
     background: rgb(9,75,121);
-    background: linear-gradient(318deg, rgba(9,75,121,0.04245448179271705) 0%, rgba(27,19,19,0.053658963585434205) 0%, rgba(20,42,61,0.9304096638655462) 100%);
+    background: linear-gradient(318deg, rgba(9, 74, 121, 0.808) 0%, rgba(27, 19, 19, 0.192) 0%, rgb(20, 42, 61) 100%);
     .content-title{
         @include f-style(50px, 600, var(--light-color));
-        max-width: 625px;
-        line-height: 60px
+        max-width: 670px;
+        line-height: 75px
     }
     .content-description{
         @include f-style(18px, 400, var(--light-color));
-        line-height: 27px;
-        max-width: 540px;
+        line-height: 34px;
+        max-width: 580px;
     }
     .book-btn{
         display: flex;
@@ -74,7 +73,7 @@
 
 .hero__bottom-contents{
     position: absolute;
-    bottom: -8%;
+    bottom: -15%;
     left: 0;
     width: 100%;
     height: fit-content;
@@ -91,7 +90,7 @@
     column-gap: 2rem;
     margin: 0 auto;
     --overlay-mix-blend-mode: initial;
-    max-width: 1150px;
+    max-width: 1200px;
     width: 100%;
     .content-detail{
       text-align: center;
@@ -119,21 +118,226 @@
         }
       }
       h3{
-        line-height: 28px;
+        line-height: 35px;
         @include f-style(28px, 600, var(--light-color));
-        max-width: 330px;
+        max-width: 340px;
       }
       p{
         margin-top: 15px;
         line-height: 24px;
         @include f-style(16px, 300, var(--light-color));
-        max-width: 330px;
+        max-width: 350px;
   
       }
     }
 
   }
 
-@media only screen and (max-width: 1024px) {
 
+  @media only screen and (max-width:902px){
+    .details-wrapper{
+      column-gap: 2rem;
+      .content-detail{      
+        h3{
+          line-height: 31px;
+          @include f-style(24px, 600, var(--light-color));
+          max-width: 340px;
+        }
+        p{
+          margin-top: 15px;
+          line-height: 22px;
+          @include f-style(14px, 300, var(--light-color));
+          max-width: 350px;
+    
+        }
+      }
+  
+    }
+  }
+  @media only screen and (max-width:736px){
+    .hero__bottom-contents{
+    padding: 20px 0 25px;
+    }
+    .details-wrapper{
+      column-gap: 2rem;
+      .content-detail{      
+        h3{
+          line-height: 28px;
+          @include f-style(20px, 600, var(--light-color));
+          max-width: 340px;
+        }
+        p{
+          margin-top: 15px;
+          line-height: 22px;
+          @include f-style(13px, 300, var(--light-color));
+          max-width: 350px;
+    
+        }
+      }
+  
+    }
+  }
+
+@media only screen and (max-width: 864px) {
+  .banner-images{
+    height: 550px;
+  }
+  .banner-contents{
+    row-gap: 1.8rem;
+    .content-title{
+        @include f-style(45px, 600, var(--light-color));
+        max-width: 625px;
+        line-height: 60px
+    }
+    .content-description{
+        @include f-style(16px, 400, var(--light-color));
+        line-height: 27px;
+    }
+    .book-btn{
+        @include f-style(16px, 500, var(--light-color));
+        padding: 10px 42px;
+        i{
+            margin-top: 5px;
+        }
+  }
+}
+}
+
+
+@media only screen and (max-width: 656px) {
+  .banner-images{
+    height: 580px;
+  }
+  .banner-contents{
+    row-gap: 1.2rem;
+    padding-top: 5.8rem;
+    padding-left: 2.5rem;
+    .content-title{
+        @include f-style(38px, 600, var(--light-color));
+        max-width: 625px;
+        line-height: 60px
+    }
+    .content-description{
+        @include f-style(15px, 400, var(--light-color));
+        line-height: 27px;
+        max-width: 450px;
+    }
+    .book-btn{
+        @include f-style(16px, 500, var(--light-color));
+        padding: 10px 42px;
+        i{
+            margin-top: 5px;
+        }
+  }
+}
+
+.hero__bottom-contents{
+  bottom: -25%;
+}
+.details-wrapper{
+  row-gap: 2rem;
+  flex-direction: column;
+  .content-detail{    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    &:nth-child(2){
+      &::before, &::after{
+        display: none;
+      
+      }
+      border-top: 1px solid var(--light-color);
+      border-bottom: 1px solid var(--light-color);
+      padding: 10px 0;
+      width: 100%;
+    }  
+    h3{
+      line-height: 28px;
+      @include f-style(20px, 600, var(--light-color));
+      max-width: 100%;
+    }
+    p{
+      margin-top: 10px;
+      line-height: 22px;
+      @include f-style(14px, 300, var(--light-color));
+      max-width: 100%;
+
+    }
+  }
+
+}
+}
+@media only screen and (max-width: 488px) {
+ 
+  .banner-contents{
+    row-gap: 1.2rem;
+    padding-top: 5.8rem;
+    padding-left: 1.5rem;
+    .content-title{
+        @include f-style(33px, 600, var(--light-color));
+        max-width: 625px;
+        line-height: 48px
+    }
+    .content-description{
+        @include f-style(14px, 400, var(--light-color));
+        line-height: 24px;
+        max-width: 380px;
+    }
+    .book-btn{
+        @include f-style(15px, 500, var(--light-color));
+        padding: 8px 38px;
+        i{
+            margin-top: 6px;
+        }
+  }
+}
+}
+
+
+@media only screen and (max-width: 430px) {
+  .details-wrapper{
+    row-gap: 2rem;
+    .content-detail{    
+      h3{
+        line-height: 28px;
+        @include f-style(18px, 600, var(--light-color));
+      }
+      p{
+        margin-top: 5px;
+        line-height: 20px;
+        @include f-style(13px, 300, var(--light-color));
+  
+      }
+    }
+  
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  
+  .banner-contents{
+    row-gap: 1.2rem;
+    padding-top: 5.8rem;
+    padding-left: 1.5rem;
+    .content-title{
+        @include f-style(28px, 600, var(--light-color));
+        max-width: 625px;
+        line-height: 44px
+    }
+    .content-description{
+        @include f-style(14px, 400, var(--light-color));
+        line-height: 22px;
+        max-width: 300px;
+    }
+    .book-btn{
+        @include f-style(14px, 500, var(--light-color));
+        padding: 6px 36px;
+        i{
+            margin-top: 6px;
+        }
+  }
+}
 }

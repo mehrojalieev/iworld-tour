@@ -1,9 +1,29 @@
 {
-    "navbar":{
-        "home":"Asosiy",
-        "about":"Biz haqimizda",
-        "contact":"Bog'lanish",
-        "tours":"Turlar",
-        "faq":"FAQ"
+    "navbar": {
+        "home": "Asosiy",
+        "about": "Biz haqimizda",
+        "contact": "Bog'lanish",
+        "tours": "Turlar",
+        "faq": "FAQ",
+        "follow": "Bog'lanish"
+    },
+    "hero-contents": {
+        "content-title": "Orzu qilgan manzilingizga sayohat qiling",
+        "content-description": "Orzular dunyosini kashf eting! Noyob sayohatlar, shaxsiy yondashuv va unutilmas taassurotlar",
+        "book-btn": "Buyurtma berish"
+    },
+    "hero-details": {
+        "detail-one": {
+            "title": "Individual yondashuv",
+            "description": "Sizning istaklaringizga moslashtirilgan shaxsiy marshrutlar va ekskursiyalar."
+        },
+        "detail-two": {
+            "title": "Yuqori darajadagi xizmat",
+            "description": "Eng yaxshi mehmonxonalarda qulay joylashish va ishonchli transfer"
+        },
+        "detail-three": {
+            "title": "Eksklyuziv takliflar",
+            "description": "Safaringizni unutilmas qiladigan maxsus ekskursiyalar va tadbirlar."
+        }
     }
 }
