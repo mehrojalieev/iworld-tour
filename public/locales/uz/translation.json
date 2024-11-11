@@ -25,5 +25,8 @@
             "title": "Eksklyuziv takliflar",
             "description": "Safaringizni unutilmas qiladigan maxsus ekskursiyalar va tadbirlar."
         }
+    },
+    "gallery": {
+        "gallery-title": "Galeriya"
     }
 }

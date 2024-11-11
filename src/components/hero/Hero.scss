@@ -4,6 +4,9 @@
     color: $color;
 }
 
+.hero{
+  margin-bottom: 10rem;
+}
 .banner-images {
     position: relative;
     width: 100%;
@@ -271,7 +274,9 @@
 }
 }
 @media only screen and (max-width: 488px) {
- 
+  .banner-images{
+    height: 400px;
+  }
   .banner-contents{
     row-gap: 1.2rem;
     padding-top: 5.8rem;
@@ -294,13 +299,32 @@
         }
   }
 }
+.hero__bottom-contents{
+  display: none;
+}
 }
 
 
 @media only screen and (max-width: 430px) {
+  .banner-contents{
+    .content-title{
+        @include f-style(25px, 600, var(--light-color));
+        max-width: 350px;
+        line-height: 42px
+    }
+    .content-description{
+      @include f-style(13px, 400, var(--light-color));
+      line-height: 20px;
+      max-width: 350px;
+  }
+  }
+  .hero__bottom-contents{
+    bottom: -30%;
+  }
   .details-wrapper{
     row-gap: 2rem;
     .content-detail{    
+      padding: 4px 5px !important;
       h3{
         line-height: 28px;
         @include f-style(18px, 600, var(--light-color));
@@ -320,18 +344,8 @@
   
   .banner-contents{
     row-gap: 1.2rem;
-    padding-top: 5.8rem;
-    padding-left: 1.5rem;
-    .content-title{
-        @include f-style(28px, 600, var(--light-color));
-        max-width: 625px;
-        line-height: 44px
-    }
-    .content-description{
-        @include f-style(14px, 400, var(--light-color));
-        line-height: 22px;
-        max-width: 300px;
-    }
+    padding-top: 5rem;
+    padding-left: 1.2rem;
     .book-btn{
         @include f-style(14px, 500, var(--light-color));
         padding: 6px 36px;

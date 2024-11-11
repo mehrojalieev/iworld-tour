@@ -25,5 +25,8 @@
             "title":"Exclusive offers",
             "description": "Special excursions and activities that will make your trip unforgettable."
         }
+    },
+    "gallery": {
+        "gallery-title": "Gallery"
     }
 }
