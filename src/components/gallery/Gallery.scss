@@ -1,0 +1,129 @@
+.gallery {
+    padding: 2rem;
+    // background-color: #f8f9fa;
+  
+    .gallery-wrapper {
+      margin: 0 auto;
+  
+      .gallery-title {
+        text-align: left;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+      }
+  
+      .gallery-images {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        gap: 12px;
+      }
+  
+      .image-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease-in-out;
+        height: 260px;
+  
+        &:hover > img {
+          transform: scale(1.1);
+        }
+  
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease-in-out;
+        }
+  
+        .image-title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.6);
+          color: #fff;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          text-align: center;
+          opacity: 0;
+          transform: translateY(100%);
+          transition: all 0.3s ease-in-out;
+        }
+  
+        &:hover .image-title {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      padding: 1rem;
+  
+      .gallery-wrapper {
+        .gallery-title {
+          font-size: 2rem;
+        }
+  
+        .gallery-images {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery {
+      padding: 0.5rem;
+  
+      .gallery-wrapper {
+        .gallery-title {
+          font-size: 1.5rem;
+        }
+  
+        .gallery-images {
+          gap: 0.5rem;
+        }
+  
+        .image-item {
+          height: 160px;
+        }
+  
+        .image-title {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .gallery {
+      padding: 0.5rem;
+  
+      .gallery-wrapper {
+        .gallery-title {
+          font-size: 1.3rem; 
+        }
+  
+        .gallery-images {
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+        }
+  
+        .image-item {
+          height: 150px;
+        }
+  
+        .image-title {
+          font-size: 0.8rem; 
+        }
+      }
+    }
+  }
+  
