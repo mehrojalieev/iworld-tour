@@ -73,6 +73,7 @@
   
         .gallery-images {
           gap: 1rem;
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     }
@@ -97,6 +98,32 @@
   
         .image-title {
           font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 375px) {
+    .gallery {
+      padding: 0.5rem;
+  
+      .gallery-wrapper {
+        .gallery-title {
+          font-size: 1.4rem; 
+        }
+  
+        .gallery-images {
+          grid-template-columns: 1fr;
+          gap: 0.5rem;
+        }
+  
+        .image-item {
+          height: 180px;
+        }
+  
+        .image-title {
+          font-size: 0.8rem; 
         }
       }
     }

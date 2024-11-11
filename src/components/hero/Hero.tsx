@@ -4,9 +4,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 
 const images = [
-  "https://www.cpt.dk/media/10944/maldiverne-desktop.jpg?mode=crop&heightratio=0.63&width=1110",
-  "https://tengrinews.kz/userdata/news/2022/news_479433/thumb_m/photo_408682.jpeg",
-  "https://i.pinimg.com/originals/97/c4/7d/97c47d78f1cf76d3eeb1b07861e7f405.jpg"
+  "https://cdn.tripster.ru/thumbs2/68d0392e-3076-11ee-8e18-62c119461ee8.1600x900.jpeg?width=1200&height=630",
+  // "https://www.cpt.dk/media/10944/maldiverne-desktop.jpg?mode=crop&heightratio=0.63&width=1110",
+  // "https://tengrinews.kz/userdata/news/2022/news_479433/thumb_m/photo_408682.jpeg",
+  // "https://i.pinimg.com/originals/97/c4/7d/97c47d78f1cf76d3eeb1b07861e7f405.jpg",
 ];
 
 const Hero = () => {

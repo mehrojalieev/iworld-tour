@@ -5,22 +5,23 @@
 }
 
 .hero{
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 .banner-images {
     position: relative;
     width: 100%;
-    height: 620px; 
-
+    height: 590px;
+    
     
     .banner-image {
       position: absolute;
+      object-position: top !important; 
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-size: cover;
-      background-position: center;
+      background-position: top;
       background-repeat: no-repeat;
       opacity: 0;
       transition: opacity 1s ease-in-out;
@@ -42,7 +43,7 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 2rem;
-    padding-top: 7rem;
+    padding-top: 5.5rem;
     padding-left: 3.5rem;
     background: rgb(9,75,121);
     background: linear-gradient(318deg, rgba(9, 74, 121, 0.808) 0%, rgba(27, 19, 19, 0.192) 0%, rgb(20, 42, 61) 100%);
@@ -122,13 +123,13 @@
       }
       h3{
         line-height: 35px;
-        @include f-style(28px, 600, var(--light-color));
+        @include f-style(25px, 600, var(--light-color));
         max-width: 340px;
       }
       p{
         margin-top: 15px;
         line-height: 24px;
-        @include f-style(16px, 300, var(--light-color));
+        @include f-style(15px, 400, var(--light-color));
         max-width: 350px;
   
       }
@@ -275,7 +276,7 @@
 }
 @media only screen and (max-width: 488px) {
   .banner-images{
-    height: 400px;
+    height: 420px;
   }
   .banner-contents{
     row-gap: 1.2rem;
