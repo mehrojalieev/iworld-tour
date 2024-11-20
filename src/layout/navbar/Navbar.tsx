@@ -106,6 +106,7 @@ const Navbar = () => {
         </div>
 
       </div>
+
       <MenuSidebar openMenuSidebar={openMenuSidebar} setOpenMenuSidebar={setOpenMenuSidebar} />
     </nav>
   );

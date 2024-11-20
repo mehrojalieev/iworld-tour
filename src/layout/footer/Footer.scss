@@ -1,0 +1,117 @@
+.footer {
+    background-color: #0d2538; /* Primary dark color */
+    color: #ffffff;
+    padding: 2rem 1rem;
+    font-family: "Poppins", sans-serif;
+  
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 2rem;
+  
+      & > div {
+        flex: 1 1 30%;
+        min-width: 250px;
+      }
+    }
+  
+    &__logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #4da8da; /* Accent color */
+      margin-bottom: 1rem;
+    }
+  
+    &__about p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+  
+    &__links, &__socials {
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: #4da8da; /* Accent color */
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 0.8rem;
+  
+          a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: #4da8da; /* Accent color */
+            }
+          }
+        }
+      }
+    }
+  
+    &__icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+  
+      a {
+        font-size: 1.5rem;
+        color: #ffffff;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #4da8da; /* Accent color */
+        }
+      }
+    }
+  
+    &__bottom {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #b0c4de;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .footer__container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      & > div {
+        min-width: 100%;
+      }
+    }
+  
+    .footer__icons a {
+      font-size: 1.2rem;
+    }
+  
+    .footer__bottom {
+      font-size: 0.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1.5rem 0.5rem;
+    }
+  
+    .footer__icons a {
+      font-size: 1rem;
+    }
+  }
+  
