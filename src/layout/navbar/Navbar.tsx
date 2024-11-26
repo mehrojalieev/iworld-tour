@@ -24,6 +24,7 @@ const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState<boolean>(true);
 
   let lastScrollY = window.scrollY;
+console.log(null)
 
 
 
