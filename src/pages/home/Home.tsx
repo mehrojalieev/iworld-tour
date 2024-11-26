@@ -1,4 +1,5 @@
 import About from "../../components/about/About"
+import ContactUs from "../../components/contact-us/ContactUs"
 import Gallery from "../../components/gallery/Gallery"
 import Hero from "../../components/hero/Hero"
 
@@ -8,6 +9,7 @@ const Home = () => {
         <Hero/>
         <About/>
         <Gallery/>
+        <ContactUs/>
     </div>
   )
 }

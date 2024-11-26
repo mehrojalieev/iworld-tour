@@ -1,0 +1,31 @@
+@mixin f-style ($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+.contact-us{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.contact-header{
+    text-align: center;
+    h2{
+        @include f-style(40px, 500, var(--dark-color));
+    }
+    p{
+        margin-top: 15px;
+        @include f-style(16px, 400, var(--dark-color));
+        line-height: 28px;
+        max-width: 900px;
+        margin: 1rem auto;
+    }
+}
+
+.contact__contents-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
