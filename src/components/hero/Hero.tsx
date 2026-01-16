@@ -21,21 +21,32 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <div className="hero">
       <div className="banner-images">
-
-        {
-          images.map((image, index) => (
-            <div key={index} className={`banner-image ${index === currentImageIndex ? "active" : ""}`} style={{ backgroundImage: `url(${image})` }} ></div>
-          ))}
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`banner-image ${
+              index === currentImageIndex ? "active" : ""
+            }`}
+            style={{ backgroundImage: `url(${image})` }}
+          ></div>
+        ))}
 
         <div className="banner-contents">
           <h3 className="content-title">{t("hero-contents.content-title")}</h3>
-          <p className="content-description">{t("hero-contents.content-description")}</p>
-          <button className="book-btn">{t("hero-contents.book-btn")} <i><FaArrowRightLong /></i></button>
+          <p className="content-description">
+            {t("hero-contents.content-description")}
+          </p>
+          <button className="book-btn">
+            {t("hero-contents.book-btn")}{" "}
+            <i>
+              <FaArrowRightLong />
+            </i>
+          </button>
         </div>
 
         <div className="hero__bottom-contents">
@@ -53,7 +64,6 @@ const Hero = () => {
               <p>{t("hero-details.detail-three.description")}</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
