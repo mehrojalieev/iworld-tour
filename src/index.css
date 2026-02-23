@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_24pt-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_18pt-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_24pt-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_24pt-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/static/Inter_24pt-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  background-clip: content-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+.ant-table-thead .ant-table-cell {
+  font-size: 13px;
+  font-weight: 600 !important;
+}
+
+body ::-webkit-scrollbar {
+  width: 2px;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+body ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
