@@ -1,4 +1,3 @@
-import React from "react";
 import { FaPlane, FaHotel, FaMapMarkedAlt, FaHeadset } from "react-icons/fa";
 
 const services = [
