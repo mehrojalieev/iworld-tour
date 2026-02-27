@@ -14,7 +14,7 @@ const images = [
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { t } = useTranslation();
-
+  console.log(true);
   useEffect(() => {
     if (images.length <= 1) return;
     const interval = setInterval(() => {
