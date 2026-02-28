@@ -7,17 +7,17 @@ const About = () => {
   return (
     <section className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+        <div className="flex md:flex-col items-start gap-12 lg:gap-20">
           {/* Chap tomon: Rasm va Dekoratsiya */}
           <div className="relative w-full lg:w-1/2">
             {/* Orqa fondagi dekorativ kvadrat */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-100 rounded-2xl -z-10 hidden sm:block"></div>
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-teal-100 rounded-2xl -z-10 sm:hidden"></div>
 
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
               <img
                 src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800"
                 alt="Travel experience"
-                className="w-full h-[400px] md:h-[500px] object-cover"
+                className="w-full h-100 md:h-[500px] object-cover"
               />
 
               {/* Rasm ustidagi kichik tajriba kartochkasi */}
