@@ -81,10 +81,10 @@ body {
   font-family: "Inter", sans-serif !important;
 }
 
-/* @custom-variant 3xl (@media (max-width: 1599px)); 
+@custom-variant 3xl (@media (max-width: 1599px));
 @custom-variant 2xl (@media (max-width: 1278px));
 @custom-variant xl (@media (max-width: 1199px));
 @custom-variant lg (@media (max-width: 991px));
 @custom-variant md (@media (max-width: 768px));
-@custom-variant sm (@media (max-width: 578px)); 
-@custom-variant xs (@media (max-width: 479px)); */
+@custom-variant sm (@media (max-width: 578px));
+@custom-variant xs (@media (max-width: 479px));

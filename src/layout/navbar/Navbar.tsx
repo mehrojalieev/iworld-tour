@@ -47,13 +47,13 @@ console.log(null)
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-[100] bg-white shadow-lg transition-transform duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full z-100 bg-white shadow-lg transition-transform duration-300 ease-in-out ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         {/* Brand Logo */}
-        <Link to="/" className="flex-shrink-0">
+        <Link to="/" className="shrink-0">
           <img
             src={LogoImage}
             alt="Logo"
@@ -62,7 +62,7 @@ console.log(null)
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center space-x-8">
+        <ul className="flex md:hidden items-center space-x-8">
           {["home", "about", "tours", "contact", "faq"].map((item) => (
             <li key={item}>
               <Link
@@ -78,7 +78,7 @@ console.log(null)
         {/* Actions (Language & Hamburger) */}
         <div className="flex items-center space-x-4">
           {/* MUI Select with Tailwind Styling */}
-          <div className="hidden sm:block">
+          <div className="block sm:hidden">
             <Select
               value={language}
               onChange={(e: SelectChangeEvent<string>) =>
@@ -118,7 +118,7 @@ console.log(null)
           {/* Mobile Menu Button */}
           <button
             onClick={() => setOpenMenuSidebar(true)}
-            className="md:hidden p-2 text-2xl text-gray-800 hover:bg-gray-100 rounded-full transition-colors"
+            className="md:block hidden p-2 text-2xl text-gray-800 hover:bg-gray-100 rounded-full transition-colors"
           >
             <GiHamburgerMenu />
           </button>
